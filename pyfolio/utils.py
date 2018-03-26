@@ -423,7 +423,7 @@ def default_returns_func(symbol, start=None, end=None):
         Daily returns for the symbol.
          - See full explanation in tears.create_full_tear_sheet (returns).
     """
-    return empyrical.utils.default_returns_func(symbol, start=None, end=None)
+    return empyrical.utils.default_returns_func(symbol, start=start, end=end)
 
 
 @deprecated(msg=DEPRECATION_WARNING)

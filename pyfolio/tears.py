@@ -498,7 +498,7 @@ def create_returns_tear_sheet(returns, positions=None,
     """
 
     if benchmark_rets is None:
-        benchmark_rets = utils.get_symbol_rets('SPY')
+        benchmark_rets = utils.get_symbol_rets('SPY', start=returns.index[0], end=returns.index[-1])
 
     returns = returns[returns.index > benchmark_rets.index[0]]
 
